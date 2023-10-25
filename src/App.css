@@ -1,42 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.button {
+  color: white;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 175ms;
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  height: 3rem;
+  min-height: 3rem;
+  text-transform: capitalize;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.button.login {
+  background-color: green;
+  border: 1px solid green;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button.logout {
+  background-color: #80000075;
+  border: 1px solid #80000075;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button:hover {
+  border-color: hsl(259 94% 51% / 1);
+  background-color: hsl(259 94% 51% / 1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.button:active {
+  font-size: 16px;
 }
